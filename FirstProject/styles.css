@@ -1,0 +1,27 @@
+header {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+label, button {
+  margin: 20px 0 0 0;
+}
+.select {
+  width: 200px;
+}
+select {
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+.radiosContainer,
+.checkboxsContainers {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 200px;
+}

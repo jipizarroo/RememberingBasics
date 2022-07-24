@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeCode First Test</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Title</h1>
+      <p id="description">Short explanation</p>
+    </header>
+    <form id="survey-form">
+      <label id="name-label"
+        >Enter Your Name: <input type="text" id="name" placeholder="Juan Perez" required
+      /></label>
+      <label id="email-label"
+        >Enter Your Email:
+        <input
+          type="email"
+          id="email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="example@email.com"
+      /></label>
+      <label id="number-label"
+        >Input your number:
+        <input type="number" id="number" min="10" max="1000" placeholder="123"
+      /></label>
+      <label class="select">
+        Select
+        <select name="select" id="dropdown">
+          <option value="1">option 1</option>
+          <option value="2">option 2</option>
+        </select>
+      </label>
+      <label class="radiosContainer">
+        Radio groups
+        <label><input checked type="radio" name="test-radio" value="1" /> Radio 1 </label>
+        <label><input type="radio" name="test-radio" value="2" /> Radio 2 </label>
+      </label>
+      <label class="checkboxsContainers">
+        Checkbox groups
+        <label> <input type="checkbox" value="1" /> Checkbox 1 </label>
+        <label> <input type="checkbox" value="2" /> Checkbox 2 </label>
+        <label> <input type="checkbox" value="3" /> Checkbox 3 </label>
+      </label>
+
+      <label
+        >Provide a text:
+        <textarea
+          name="coments"
+          rows="3"
+          cols="30"
+          placeholder="Make comments"
+        ></textarea>
+      </label>
+      <button id="submit" type="submit">
+        Submit Form
+      </button>
+    </form>
+  </body>
+</html>
